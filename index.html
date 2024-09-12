@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Battalion force Management</title>
+</head>
+<body>
+    <div class="main">
+        <div class="homePage" id="homePage">
+            <h2>BATTALION FORCE MANAGEMENT</h2>
+            <div class="editContainer" id="editContainer">                
+                <div class="soldierDetailsContainer" id="soldierDetailsContainer">
+                    <input type="text" id="nameInput" placeholder="Full Name">
+                    <input type="text" id="rankInput" placeholder="Rank">
+                    <input type="text" id="positionInput" placeholder="Position">
+                    <input type="text" id="platoonInput" placeholder="Platoon">
+                    <input type="text" id="missionTimeInput" placeholder="Mission Time (seconds)">
+                    <select id="statusInput">
+                        <option value="active">active</option>
+                        <option value="Reserve">Reserve</option>
+                        <option value="Retired">Retired</option>
+                    </select>
+                    <button id="addPersonButton">Add Personal</button>  
+                </div>
+                <h2>FORCES OVERVIEW</h2>
+                <div class="soldiersTableContainer" id="soldiersTableContainer">
+                    <table id="soldiersTable">
+                        <thead>
+                            <tr>
+                                <th><button id="sortByNameButton">Full Name ↓</button></th>
+                                <th>Rank</th>
+                                <th>Position</th>
+                                <th>Platoon</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="soldiersTableBody">
+                            <!-- <tr>
+                                <td>Ariel Ohana</td>
+                                <td>Sergeant First Class</td>
+                                <td>Combat Soldier</td>
+                                <td>Pluga B</td>
+                                <td>Active</td>
+                                <td class="actionButtonContainer">
+                                    <button class="actionButton" id="removeBtn">Remove</button>
+                                    <button class="actionButton" id="missionBtn">Mission</button>
+                                    <button class="actionButton" id="editBtn">Edit</button>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="editPage">
+            <h2>EDIT PERSONAL</h2>
+            <div class="soldierDetailsContainer" id="soldierDetailsContainer">
+                <input type="text" id="nameInput" placeholder="Full Name">
+                <input type="text" id="rankInput" placeholder="Rank">
+                <input type="text" id="positionInput" placeholder="Position">
+                <input type="text" id="platoonInput" placeholder="Platoon">
+                <input type="text" id="missionTimeInput" placeholder="Mission Time (seconds)">
+                <select id="statusInput">
+                    <option value="active">active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select> 
+                <button id="saveChangesButton">Save Changes</button>
+                <button id="cancelButton">Cancel</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
